@@ -1,2 +1,2 @@
-# react-native
-- A cross platform application, created using React-Native and Expo
+## react-native
+A cross platform application, created using React-Native and Expo
