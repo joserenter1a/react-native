@@ -4,7 +4,8 @@
     "web": {
       "bundler": "metro"
     },
-    "name": "my-app",
-    "slug": "my-app"
+    "name": "DreamJob",
+    "description": "An app meant to connect you with your dream job. Uses the JSearch API",
+    "slug": "DreamJob"
   }
 }

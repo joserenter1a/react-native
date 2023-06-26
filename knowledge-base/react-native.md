@@ -80,3 +80,37 @@ function MyButton(props)
 - To quickstart with Expo, use
 
 `npx create-expo-app@latest -e with-router`
+
+## Dependencies 
+- Most dependencies are installed, but we need to be able to work with
+environment variables, so we run 
+`npm install expo-font axios react-native-dotenv`
+
+- to globally install the expo cli package you can run 
+`npm install -g expo-cli`
+
+- and then run `expo-cli start --tunnel`
+
+## Environment variables
+
+**Basic setup:**
+Inside your `babel.configure.js` file, add the following
+```
+module.exports = {
+  "plugins": [
+    ["module:react-native-dotenv", {
+      "moduleName": "@env",
+      "path": ".env",
+      "blacklist": null,
+      "whitelist": null,
+      "safe": false,
+      "allowUndefined": true
+    }]
+  ]
+}
+```
+- Then inside of your .env file at the root of your project directory, add your environment variables
+- Next you can import the environment variables like this
+```
+import {ENV_VARIABLE} from '@env'
+```
